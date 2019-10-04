@@ -1,12 +1,16 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import './index.css';
-import Application from './Application';
-import * as serviceWorker from './serviceWorker';
+import React from "react";
+import ReactDOM from "react-dom";
+import BadgeNew from "./pages/BadgeNew";
 
-ReactDOM.render(<Application />, document.getElementById('root'));
+import "bootstrap/dist/css/bootstrap.css";
+const container = document.getElementById("root");
 
-// If you want your app to work offline and load faster, you can change
-// unregister() to register() below. Note this comes with some pitfalls.
-// Learn more about service workers: https://bit.ly/CRA-PWA
-serviceWorker.unregister();
+ReactDOM.render(
+  <BadgeNew
+    firstName="Braxton"
+    lastName="Bonilla"
+    jobTitle="Developer"
+    twitter="@braxb6"
+  />,
+  container
+);
